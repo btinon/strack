@@ -1,17 +1,22 @@
 <?php
 
-$uname="root";
-$pass="";
-
-try
-{
-  $conn = new PDO('mysql:host=localhost;dbname=strack', $uname, $pass);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-  catch (PDOException $e)
-  {
-    echo 'ERROR: ' . $e->getMessage();
-  }
-  if (!$conn) {echo"blah didn't work";}
-  else {echo "yahooooo it worked!";}
 ?>
+<html>
+<head>
+    <title>Menu</title>
+    <style>
+    </style>
+</head>
+<body>
+    <?php echo '<a href="display.php">Display All Servers ..........................................> 1</a>';
+          echo '<br />';
+          echo '<br>';
+          echo '<a href="addserver.php">Add New Server ..............................................> 2</a>';
+          echo '<br />';
+          echo '<br>';
+          echo '<a href="editserver.php">Edit Server ....................................................> 3</a>';
+          echo '<br>';
+          
+          ?>
+</body>
+</html>
