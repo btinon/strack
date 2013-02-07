@@ -1,0 +1,22 @@
+CREATE TABLE `server` (
+  `server_record_id` int(10) unsigned NOT NULL,
+  `server_server_name` varchar(20) NOT NULL,
+  `common_server_id` varchar(6) NOT NULL,
+  `server_service_tag` varchar(20) NOT NULL,
+  `server_asset_tag` varchar(20) NOT NULL,
+  `server_model` varchar(20) NOT NULL,
+  `server_rack` varchar(20) NOT NULL,
+  `server_rack_u` int(10) unsigned NOT NULL,
+  `server_ram` varchar(20) NOT NULL,
+  `server_drives` varchar(45) NOT NULL,
+  `server_raid` varchar(45) NOT NULL,
+  `server_domain` varchar(20) NOT NULL,
+  `server_fqdn` varchar(45) NOT NULL,
+  `server_primary_ip` varchar(20) NOT NULL,
+  `server bond0_ip` varchar(20) NOT NULL,
+  `server_netmask` varchar(20) NOT NULL,
+  `server_gateway` varchar(20) NOT NULL,
+  `server_vlan` varchar(4) NOT NULL,
+  `server_tech_notes` varchar(140) NOT NULL,
+  PRIMARY KEY (`server_record_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
