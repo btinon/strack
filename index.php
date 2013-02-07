@@ -1,22 +1,27 @@
 <?php
 
 ?>
+
 <html>
 <head>
-    <title>Menu</title>
-    <style>
-    </style>
+  <title>Strack menu</title>
 </head>
 <body>
-    <?php echo '<a href="display.php">Display All Servers ..........................................> 1</a>';
-          echo '<br />';
-          echo '<br>';
-          echo '<a href="addserver.php">Add New Server ..............................................> 2</a>';
-          echo '<br />';
-          echo '<br>';
-          echo '<a href="editserver.php">Edit Server ....................................................> 3</a>';
-          echo '<br>';
-          
-          ?>
+  <form method="post" action="list.php">
+    <input type="submit" name="list" value="List Servers">
+  </form>
+  <br />
+  <br />
+  <form method="post" action="addserver.php">
+    Bring up server record in the SMDB, right click and [view source],<br />
+    then save the source file and enter the filename below:<br />
+    <input type="text" name="sourcefn"><br />
+    <input type="submit" name="add" value="Add Server">
+  </form>
+  <br />
+  <br />
+  <form method="post" action="update.php">
+    <input type="submit" name="update" value="Update Server">
+  </form>
 </body>
 </html>
