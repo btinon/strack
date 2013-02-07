@@ -145,7 +145,7 @@ echo "<br />";
 // domain
 $hits = $xpath->query("//select[@id='domain']/option[@selected='selected']/text()");
 foreach($hits as $hit) {
-    echo "14  domain ---------------------------------------> ";
+    echo "14 domain ----------------------------------------> ";
     echo $hit->textContent . " ";
 }
 echo "<br />";
